@@ -14,9 +14,29 @@
   --key-background-orange: hsl(30, 25%, 89%);
   --key-shadow-orange: hsl(28, 16%, 65%);
   --text-keys: hsl(221, 14%, 31%);
-  --text-white: hsl(0, 0, 100%);
+  --text-white: hsl(0, 0%, 100%);
   /* theme 2 */
+  --bgc-main-grey: hsl(0, 0%, 90%);
+  --bgc-keypad-greyred: hsl(0, 5%, 81%);
+  --bgc-screen-lightgrey: hsl(0, 0%, 93%);
+  --key-background-teal: hsl(185, 42%, 37%);
+  --key-shadow-teal: hsl(185, 58%, 25%);
+  --key-background-darkOrange: hsl(25, 98%, 40%);
+  --key-shadow-darkOrange: hsl(25, 99%, 27%);
+  --key-background-yellow: hsl(45, 7%, 89%);
+  --key-shadow-yellow: hsl(35, 11%, 61%);
+  --text-keys-yellow: hsl(60, 10%, 19%);
   /* theme 3 */
+  --bgc-main-violet: hsl(268, 75%, 9%);
+  --bgc-keypad-screen-violet: hsl(268, 71%, 12%);
+  --key-background-violet: hsl(281, 89%, 26%);
+  --key-shadow-magenta: hsl(285, 91%, 52%);
+  --key-background-cyan: hsl(176, 100%, 44%);
+  --key-shadow-cyan: hsl(177, 92%, 70%);
+  --key-background-darkViolet: hsl(268, 47%, 21%);
+  --key-shadow-darkMagenta: hsl(290, 70%, 36%);
+  --text-yellow: hsl(52, 100%, 62%);
+  --text-darkBlue: hsl(198, 20%, 13%);
 }
 
 * {
@@ -31,6 +51,10 @@
 .flex-sb {
   display: flex;
   justify-content: space-between;
+}
+.flex-sa {
+  display: flex;
+  justify-content: space-around;
 }
 
 .grid {
@@ -79,14 +103,19 @@ body {
   border-radius: 10px;
 }
 
-.output {
+.calculator-output {
   font-size: 32px;
   text-align: right;
   color: white;
   background-color: var(--bgc-screen-darkblue);
   margin: 20px 0px;
-  padding: 20px;
   border-radius: 10px;
+  height: 79px;
+}
+
+.output {
+  padding: 20px;
+  letter-spacing: 1.5px;
 }
 
 /* buttons */
@@ -111,30 +140,48 @@ button {
   background-color: var(--key-background-orange);
   box-shadow: 0px 3px var(--key-shadow-orange);
 }
+/* .key-color-2:hover {} */
 
 .key-color-2 {
   color: white;
   background-color: var(--key-background-blue);
   box-shadow: 0px 3px var(--key-shadow-blue);
 }
+/* .key-color-2:hover {} */
 
 .key-color-3 {
   color: white;
   background-color: var(--key-background-red);
   box-shadow: 0px 3px var(--key-shadow-red);
 }
+/* .key-color-3:hover {} */
 
 /* theme setting buttons */
+
 .setting-container {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 10px;
 }
-.settings {
+.settings-container {
   margin-left: 20px;
 }
 
 .setting-btns {
   background-color: var(--bgc-keypad-darkblue);
-  padding: 7px;
-  border-radius: 10px;
+  padding: 5px 2px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+}
+
+.setting {
+  margin: 0px 3px;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: var(--bgc-keypad-darkblue);
+}
+
+.show {
+  background-color: var(--key-background-red);
 }

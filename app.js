@@ -96,3 +96,25 @@ function divide (a, b) {
     output.textContent = quotient
   }
 }
+
+
+
+const setting1 = document.querySelector('.setting1')
+const setting2 = document.querySelector('.setting2')
+const setting3 = document.querySelector('.setting3')
+
+setting1.addEventListener('click', () => {
+  setting2.classList.remove('show')
+  setting3.classList.remove('show')
+  setting1.classList.add('show')
+})
+setting2.addEventListener('click', () => {
+  setting1.classList.remove('show')
+  setting3.classList.remove('show')
+  setting2.classList.add('show')
+})
+setting3.addEventListener('click', () => {
+  setting1.classList.remove('show')
+  setting2.classList.remove('show')
+  setting3.classList.add('show')
+})
