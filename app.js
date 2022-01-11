@@ -127,11 +127,13 @@ setting1.addEventListener('click', () => {
     color.style.backgroundColor = `var(--key-background-orange)`
     color.style.boxShadow = `0px 3px var(--key-shadow-orange)`
   })
+
   const keyColor2 = document.querySelectorAll('.key-color-2')
   keyColor2.forEach((color) => {
     color.style.backgroundColor = `var(--key-background-blue)`
     color.style.boxShadow = `0px 3px var(--key-shadow-blue)`
   })
+
   const keyColor3 = document.querySelector('.key-color-3')
   keyColor3.style.color = `var(--text-white)`
   keyColor3.style.backgroundColor = `var(--key-background-red)`
@@ -163,11 +165,13 @@ setting2.addEventListener('click', () => {
     color.style.backgroundColor = `var(--key-background-yellow)`
     color.style.boxShadow = `0px 3px var(--key-shadow-yellow)`
   })
+  
   const keyColor2 = document.querySelectorAll('.key-color-2')
   keyColor2.forEach((color) => {
     color.style.backgroundColor = `var(--key-background-teal)`
     color.style.boxShadow = `0px 3px var(--key-shadow-teal)`
   })
+
   const keyColor3 = document.querySelector('.key-color-3')
   keyColor3.style.color = `var(--text-white)`
   keyColor3.style.backgroundColor = `var(--key-background-darkOrange)`
@@ -198,11 +202,13 @@ setting3.addEventListener('click', () => {
     color.style.backgroundColor = `var(--key-background-darkViolet)`
     color.style.boxShadow = `0px 3px var(--key-shadow-darkMagenta)`
   })
+
   const keyColor2 = document.querySelectorAll('.key-color-2')
   keyColor2.forEach((color) => {
     color.style.backgroundColor = `var(--key-background-violet)`
     color.style.boxShadow = `0px 3px var(--key-shadow-magenta)`
   })
+
   const keyColor3 = document.querySelector('.key-color-3')
   keyColor3.style.color = `var(--text-darkBlue)`
   keyColor3.style.backgroundColor = `var(--key-background-cyan)`
