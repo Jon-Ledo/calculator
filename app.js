@@ -103,18 +103,105 @@ const setting1 = document.querySelector('.setting1')
 const setting2 = document.querySelector('.setting2')
 const setting3 = document.querySelector('.setting3')
 
+// ***** THEME 1 *****
 setting1.addEventListener('click', () => {
+  // add/remove the show class
   setting2.classList.remove('show')
   setting3.classList.remove('show')
   setting1.classList.add('show')
+
+  // change backgrounds
+  const body = document.body
+  const keypad = document.querySelector('.calculator-btns')
+  body.style.backgroundColor =  `var(--bgc-main-darkblue)`
+  body.style.color = `var(--text-white)`
+  output.style.backgroundColor = `var(--bgc-screen-darkblue)`
+  output.style.color = `var(--text-white)`
+  keypad.style.backgroundColor = `var(--bgc-keypad-darkblue)`
+  
+  // change color of keys
+  const keyColor1 = document.querySelectorAll('.key-color-1')
+  keyColor1.forEach((color) => {
+    color.style.color = `var(--text-keys)`
+    color.style.backgroundColor = `var(--key-background-orange)`
+    color.style.boxShadow = `0px 3px var(--key-shadow-orange)`
+  })
+  const keyColor2 = document.querySelectorAll('.key-color-2')
+  keyColor2.forEach((color) => {
+    color.style.backgroundColor = `var(--key-background-blue)`
+    color.style.boxShadow = `0px 3px var(--key-shadow-blue)`
+  })
+  const keyColor3 = document.querySelector('.key-color-3')
+  keyColor3.style.color = `var(--text-white)`
+  keyColor3.style.backgroundColor = `var(--key-background-red)`
+  keyColor3.style.boxShadow = `0px 3px var(--key-shadow-red)`
 })
+
+
+// ***** THEME 2 *****
 setting2.addEventListener('click', () => {
+  // add/remove the show class
   setting1.classList.remove('show')
   setting3.classList.remove('show')
   setting2.classList.add('show')
+
+  // change backgrounds
+  const body = document.body
+  const keypad = document.querySelector('.calculator-btns')
+  body.style.backgroundColor =  `var(--bgc-main-grey)`
+  body.style.color = `var(--text-keys-yellow)`
+  output.style.backgroundColor = `var(--bgc-screen-lightgrey)`
+  output.style.color = `var(--text-keys-yellow)`
+  keypad.style.backgroundColor = `var(--bgc-keypad-greyred)`
+  
+  // change color of keys
+  const keyColor1 = document.querySelectorAll('.key-color-1')
+  keyColor1.forEach((color) => {
+    color.style.color = `var(--text-keys)`
+    color.style.backgroundColor = `var(--key-background-yellow)`
+    color.style.boxShadow = `0px 3px var(--key-shadow-yellow)`
+  })
+  const keyColor2 = document.querySelectorAll('.key-color-2')
+  keyColor2.forEach((color) => {
+    color.style.backgroundColor = `var(--key-background-teal)`
+    color.style.boxShadow = `0px 3px var(--key-shadow-teal)`
+  })
+  const keyColor3 = document.querySelector('.key-color-3')
+  keyColor3.style.color = `var(--text-white)`
+  keyColor3.style.backgroundColor = `var(--key-background-darkOrange)`
+  keyColor3.style.boxShadow = `0px 3px var(--key-shadow-darkOrange)`
 })
+
+// ***** THEME 3 *****
 setting3.addEventListener('click', () => {
+  // add/remove the show class
   setting1.classList.remove('show')
   setting2.classList.remove('show')
   setting3.classList.add('show')
+
+  // change backgrounds
+  const body = document.body
+  const keypad = document.querySelector('.calculator-btns')
+  body.style.backgroundColor =  `var(--bgc-main-violet)`
+  body.style.color = `var(--text-yellow)`
+  output.style.backgroundColor = `var(--bgc-keypad-screen-violet)`
+  output.style.color = `var(--text-yellow)`
+  keypad.style.backgroundColor = `var(--bgc-keypad-screen-violet)`
+
+  // change color of keys
+  const keyColor1 = document.querySelectorAll('.key-color-1')
+  keyColor1.forEach((color) => {
+    color.style.color = `var(--text-yellow)`
+    color.style.backgroundColor = `var(--key-background-darkViolet)`
+    color.style.boxShadow = `0px 3px var(--key-shadow-darkMagenta)`
+  })
+  const keyColor2 = document.querySelectorAll('.key-color-2')
+  keyColor2.forEach((color) => {
+    color.style.backgroundColor = `var(--key-background-violet)`
+    color.style.boxShadow = `0px 3px var(--key-shadow-magenta)`
+  })
+  const keyColor3 = document.querySelector('.key-color-3')
+  keyColor3.style.color = `var(--text-darkBlue)`
+  keyColor3.style.backgroundColor = `var(--key-background-cyan)`
+  keyColor3.style.boxShadow = `0px 3px var(--key-shadow-cyan)`
 })
