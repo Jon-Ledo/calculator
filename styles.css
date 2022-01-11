@@ -113,7 +113,7 @@ body {
 .output {
   padding: 20px;
   letter-spacing: 1.5px;
-  height: 79px;
+  /* height: 79px; */
 }
 
 /* buttons */

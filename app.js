@@ -113,10 +113,11 @@ setting1.addEventListener('click', () => {
   // change backgrounds
   const body = document.body
   const keypad = document.querySelector('.calculator-btns')
+  const outputBackground = document.querySelector('.calculator-output')
   body.style.backgroundColor =  `var(--bgc-main-darkblue)`
   body.style.color = `var(--text-white)`
-  output.style.backgroundColor = `var(--bgc-screen-darkblue)`
-  output.style.color = `var(--text-white)`
+  outputBackground.style.backgroundColor = `var(--bgc-screen-darkblue)`
+  outputBackground.style.color = `var(--text-white)`
   keypad.style.backgroundColor = `var(--bgc-keypad-darkblue)`
   
   // change color of keys
@@ -148,10 +149,11 @@ setting2.addEventListener('click', () => {
   // change backgrounds
   const body = document.body
   const keypad = document.querySelector('.calculator-btns')
+  const outputBackground = document.querySelector('.calculator-output')
   body.style.backgroundColor =  `var(--bgc-main-grey)`
   body.style.color = `var(--text-keys-yellow)`
-  output.style.backgroundColor = `var(--bgc-screen-lightgrey)`
-  output.style.color = `var(--text-keys-yellow)`
+  outputBackground.style.backgroundColor = `var(--bgc-screen-lightgrey)`
+  outputBackground.style.color = `var(--text-keys-yellow)`
   keypad.style.backgroundColor = `var(--bgc-keypad-greyred)`
   
   // change color of keys
@@ -182,10 +184,11 @@ setting3.addEventListener('click', () => {
   // change backgrounds
   const body = document.body
   const keypad = document.querySelector('.calculator-btns')
+  const outputBackground = document.querySelector('.calculator-output')
   body.style.backgroundColor =  `var(--bgc-main-violet)`
   body.style.color = `var(--text-yellow)`
-  output.style.backgroundColor = `var(--bgc-keypad-screen-violet)`
-  output.style.color = `var(--text-yellow)`
+  outputBackground.style.backgroundColor = `var(--bgc-keypad-screen-violet)`
+  outputBackground.style.color = `var(--text-yellow)`
   keypad.style.backgroundColor = `var(--bgc-keypad-screen-violet)`
 
   // change color of keys
