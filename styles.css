@@ -8,10 +8,13 @@
   --bgc-keypad-darkblue: hsl(223, 31%, 20%);
   --bgc-screen-darkblue: hsl(224, 36%, 15%);
   --key-background-blue: hsl(225, 21%, 49%);
+  --key-hover-blue: hsl(225, 21%, 59%);
   --key-shadow-blue: hsl(224, 28%, 35%);
   --key-background-red: hsl(6, 63%, 50%);
+  --key-hover-red: hsl(6, 63%, 60%);
   --key-shadow-red: hsl(6, 70%, 34%);
   --key-background-orange: hsl(30, 25%, 89%);
+  --key-hover-orange: hsl(30, 25%, 99%);
   --key-shadow-orange: hsl(28, 16%, 65%);
   --text-keys: hsl(221, 14%, 31%);
   --text-white: hsl(0, 0%, 100%);
@@ -20,20 +23,26 @@
   --bgc-keypad-greyred: hsl(0, 5%, 81%);
   --bgc-screen-lightgrey: hsl(0, 0%, 93%);
   --key-background-teal: hsl(185, 42%, 37%);
+  --key-hover-teal: hsl(185, 42%, 47%);
   --key-shadow-teal: hsl(185, 58%, 25%);
   --key-background-darkOrange: hsl(25, 98%, 40%);
+  --key-hover-darkOrange: hsl(25, 98%, 50%);
   --key-shadow-darkOrange: hsl(25, 99%, 27%);
   --key-background-yellow: hsl(45, 7%, 89%);
+  --key-hover-yellow: hsl(45, 7%, 99%);
   --key-shadow-yellow: hsl(35, 11%, 61%);
   --text-keys-yellow: hsl(60, 10%, 19%);
   /* theme 3 */
   --bgc-main-violet: hsl(268, 75%, 9%);
   --bgc-keypad-screen-violet: hsl(268, 71%, 12%);
   --key-background-violet: hsl(281, 89%, 26%);
+  --key-hover-violet: hsl(281, 89%, 36%);
   --key-shadow-magenta: hsl(285, 91%, 52%);
   --key-background-cyan: hsl(176, 100%, 44%);
+  --key-hover-cyan: hsl(176, 100%, 54%);
   --key-shadow-cyan: hsl(177, 92%, 70%);
   --key-background-darkViolet: hsl(268, 47%, 21%);
+  --key-hover-darkViolet: hsl(268, 47%, 31%);
   --key-shadow-darkMagenta: hsl(290, 70%, 36%);
   --text-yellow: hsl(52, 100%, 62%);
   --text-darkBlue: hsl(198, 20%, 13%);
@@ -143,9 +152,6 @@ button {
 .key-color-1:hover {
   background-color: hsl(30, 25%, 99%);
 }
-.key-color-1:active {
-  background-color: var(--key-shadow-orange);
-}
 
 .key-color-2 {
   color: white;
@@ -155,9 +161,6 @@ button {
 .key-color-2:hover {
   background-color: hsl(225, 21%, 59%);
 }
-.key-color-2:active {
-  background-color: var(--key-shadow-blue);
-}
 
 .key-color-3 {
   color: white;
@@ -166,9 +169,6 @@ button {
 }
 .key-color-3:hover {
   background-color: hsl(6, 63%, 60%);
-}
-.key-color-3:active {
-  background-color: var(--key-shadow-red);
 }
 
 /* ***** THEME SETTING BTNS ***** */

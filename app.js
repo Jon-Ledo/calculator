@@ -5,6 +5,7 @@ let str = ""
 let value1 = ""
 let value2 = ""
 let flag = ""
+let selectedTheme = 1
 
 btns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
@@ -141,7 +142,6 @@ setting1.addEventListener('click', () => {
   keyColor3.style.boxShadow = `0px 3px var(--key-shadow-red)`
 })
 
-
 // ***** THEME 2 *****
 setting2.addEventListener('click', () => {
   // add/remove the show class
@@ -219,7 +219,6 @@ setting3.addEventListener('click', () => {
 
 })
 
-let selectedTheme = 1
 const keyColor1 = document.querySelectorAll('.key-color-1')
 const keyColor2 = document.querySelectorAll('.key-color-2')
 const keyColor3 = document.querySelector('.key-color-3')
@@ -257,15 +256,15 @@ keyColor3.addEventListener('mouseleave', () => {
 function hoverEffectOnOne (flag, target) {
   // theme 1
   if (flag === 1) {
-    target.style.backgroundColor = `var(--key-shadow-orange)`
+    target.style.backgroundColor = `var(--key-hover-orange)`
   }
   //theme 2
   if (flag === 2) {
-    target.style.backgroundColor = `var(--key-shadow-yellow)`
+    target.style.backgroundColor = `var(--key-hover-yellow)`
   }
   //theme 3
   if (flag === 3) {
-    target.style.backgroundColor = `var(--key-shadow-darkMagenta)`
+    target.style.backgroundColor = `var(--key-hover-darkViolet)`
   }
 }
 function hoverEffectOffOne(flag, target) {
@@ -286,15 +285,15 @@ function hoverEffectOffOne(flag, target) {
 function hoverEffectOnTwo (flag, target) {
   // theme 1
   if (flag === 1) {
-    target.style.backgroundColor = `var(--key-shadow-blue)`
+    target.style.backgroundColor = `var(--key-hover-blue)`
   }
   //theme 2
   if (flag === 2) {
-    target.style.backgroundColor = `var(--key-shadow-teal)`
+    target.style.backgroundColor = `var(--key-hover-teal)`
   }
   //theme 3
   if (flag === 3) {
-    target.style.backgroundColor = `var(--key-shadow-magenta)`
+    target.style.backgroundColor = `var(--key-hover-violet)`
   }
 }
 function hoverEffectOffTwo(flag, target) {
@@ -315,15 +314,15 @@ function hoverEffectOffTwo(flag, target) {
 function hoverEffectOnThree (flag) {
   //theme 1
   if (flag === 1) {
-    keyColor3.style.backgroundColor = `var(--key-shadow-red)`
+    keyColor3.style.backgroundColor = `var(--key-hover-red)`
   }
   // theme 2
   if (flag === 2) {
-    keyColor3.style.backgroundColor = `var(--key-shadow-darkOrange)`
+    keyColor3.style.backgroundColor = `var(--key-hover-darkOrange)`
   }
   // theme 3
   if (flag === 3) {
-    keyColor3.style.backgroundColor = `var(--key-shadow-cyan)`
+    keyColor3.style.backgroundColor = `var(--key-hover-cyan)`
   }
 }
 function hoverEffectOffThree (flag) {
@@ -340,3 +339,80 @@ function hoverEffectOffThree (flag) {
     keyColor3.style.backgroundColor = `var(--key-background-cyan)`
   }
 }
+
+// MOUSE DOWN/UP EVENTS
+btns.forEach((btn) => {
+  btn.addEventListener('mousedown', (e) => {
+    const button = e.target
+
+    if (button.classList.contains('key-color-1')) {
+      if (selectedTheme === 1 || selectedTheme === 2) {
+        button.style.backgroundColor = `var(--key-shadow-orange)`
+      }
+      if (selectedTheme === 3) {
+        button.style.backgroundColor = `var(--key-shadow-darkMagenta)`
+      }
+    }
+
+    if (button.classList.contains('key-color-2')) {
+      if (selectedTheme === 1) {
+        button.style.backgroundColor = `var(--key-shadow-blue)`
+      }
+      if (selectedTheme === 2) {
+        button.style.backgroundColor = `var(--key-shadow-teal)`
+      }
+      if (selectedTheme === 3) {
+        button.style.backgroundColor = `var(--key-shadow-magenta)`
+      }
+    }
+
+    if (button.classList.contains('key-color-3')) {
+      if (selectedTheme === 1) {
+        button.style.backgroundColor = `var(--key-shadow-red)`
+      }
+      if (selectedTheme === 2) {
+        button.style.backgroundColor = `var(--key-shadow-darkOrange)`
+      }
+      if (selectedTheme === 3) {
+        button.style.backgroundColor = `var(--key-shadow-cyan)`
+      }
+    }
+  })
+
+  btn.addEventListener('mouseup', (e) => {
+    const button = e.target
+
+    if (button.classList.contains('key-color-1')) {
+      if (selectedTheme === 1 || selectedTheme === 2) {
+        button.style.backgroundColor = `var(--key-background-orange)`
+      }
+      if (selectedTheme === 3) {
+        button.style.backgroundColor = `var(--key-background-darkViolet)`
+      }
+    }
+
+    if (button.classList.contains('key-color-2')) {
+      if (selectedTheme === 1) {
+        button.style.backgroundColor = `var(--key-background-blue)`
+      }
+      if (selectedTheme === 2) {
+        button.style.backgroundColor = `var(--key-background-teal)`
+      }
+      if (selectedTheme === 3) {
+        button.style.backgroundColor = `var(--key-background-violet)`
+      }
+    }
+
+    if (button.classList.contains('key-color-3')) {
+      if (selectedTheme === 1) {
+        button.style.backgroundColor = `var(--key-background-red)`
+      }
+      if (selectedTheme === 2) {
+        button.style.backgroundColor = `var(--key-background-darkOrange)`
+      }
+      if (selectedTheme === 3) {
+        button.style.backgroundColor = `var(--key-background-cyan)`
+      }
+    }
+  })
+})
