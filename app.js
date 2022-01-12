@@ -103,13 +103,18 @@ function divide (a, b) {
 const setting1 = document.querySelector('.setting1')
 const setting2 = document.querySelector('.setting2')
 const setting3 = document.querySelector('.setting3')
+const themeSelectBox = document.querySelector('.setting-btns')
 
 // ***** THEME 1 *****
 setting1.addEventListener('click', () => {
   // add/remove the show class
-  setting2.classList.remove('show')
-  setting3.classList.remove('show')
-  setting1.classList.add('show')
+  setting2.classList.remove('show-darkOrange')
+  setting2.classList.add('invisible')
+  setting3.classList.remove('show-cyan')
+  setting3.classList.add('invisible')
+  setting1.classList.remove('invisible')
+  setting1.classList.add('show-red')
+  themeSelectBox.style.backgroundColor = `var(--bgc-keypad-darkblue)`
   selectedTheme = 1
 
   // change backgrounds
@@ -145,9 +150,13 @@ setting1.addEventListener('click', () => {
 // ***** THEME 2 *****
 setting2.addEventListener('click', () => {
   // add/remove the show class
-  setting1.classList.remove('show')
-  setting3.classList.remove('show')
-  setting2.classList.add('show')
+  setting1.classList.remove('show-red')
+  setting1.classList.add('invisible')
+  setting3.classList.remove('show-cyan')
+  setting3.classList.add('invisible')
+  setting2.classList.remove('invisible')
+  setting2.classList.add('show-darkOrange')
+  themeSelectBox.style.backgroundColor = `var(--bgc-keypad-greyred)`
   selectedTheme = 2
 
   // change backgrounds
@@ -183,9 +192,13 @@ setting2.addEventListener('click', () => {
 // ***** THEME 3 *****
 setting3.addEventListener('click', () => {
   // add/remove the show class
-  setting1.classList.remove('show')
-  setting2.classList.remove('show')
-  setting3.classList.add('show')
+  setting1.classList.remove('show-red')
+  setting1.classList.add('invisible')
+  setting2.classList.remove('show-darkOrange')
+  setting2.classList.add('invisible')
+  setting3.classList.remove('invisible')
+  setting3.classList.add('show-cyan')
+  themeSelectBox.style.backgroundColor = `var(--bgc-keypad-screen-violet)`
   selectedTheme = 3
 
   // change backgrounds

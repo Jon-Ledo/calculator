@@ -202,8 +202,27 @@ button {
   background-color: var(--bgc-keypad-darkblue);
 }
 
-.show {
+/* styles applied with JavaScript */
+.show-red {
   background-color: var(--key-background-red);
+}
+/* .show-bg-darkBlue {
+  background-color: var(--bgc-keypad-darkblue);
+} */
+.show-cyan {
+  background-color: var(--key-background-cyan);
+}
+/* .show-bg-greyRed {
+  background-color: var(--bgc-keypad-greyred);
+} */
+.show-darkOrange {
+  background-color: var(--key-background-darkOrange);
+}
+/* .show-bg-violet {
+  background-color: var(--bgc-keypad-screen-violet);
+} */
+.invisible {
+  background-color: transparent;
 }
 
 /* ***** FOOTER STYLES ***** */
