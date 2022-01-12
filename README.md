@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Jon-Ledo/calculator)
-- Live Site URL: [Add live site URL here](https://jon-ledo.github.io/calculator/)
+- Solution URL: [github repo](https://github.com/Jon-Ledo/calculator)
+- Live Site URL: [live site](https://jon-ledo.github.io/calculator/)
 
 ## My process
 
